@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Here you are! ^^</title>
+    <style>
+        body {
+            margin: 15px auto 20px 12px;
+            color: #fff;
+            background-color: #577566;
+        }
+
+        .h1o {
+          color: #181818;
+          float: left;
+          margin-right: 20px;
+        }
+
+        .h1t {
+          color: darkred;
+          float: left
+          margin-right: 200px;
+          text-shadow: 2px 2px 1px #fff;
+        }
+
+        strong {
+          color: #333;
+        }
+
+        h3 {
+          float:left;
+          margin: 0 20px 0 0;
+        }
+
+        .parauno {
+          float: right;
+          position: absolute;
+          font-size: 18px;
+          margin: 5% 20% 20% 30%;
+        }
+
+        .create {
+          font-size: 70px;
+          position: absolute;
+          margin: 0 0 0 30px;
+        }
+
+        .to {
+          position: absolute;
+        }
+
+        .something {
+          position: absolute;
+          margin: 25px 0 0 230px;
+        }
+
+        .textarea {
+          position: absolute;
+          margin: 0 0 0 0;
+        }
+
+        h5 {
+          margin: 0 50% 0  50%;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 class="h1o">Thank you for coming!</h1>
+    <h1 class="h1t">♥</h1><br>
+    <p class="parauno">a system for <strong>everyone</strong> to enjoy<br>
+            and contribute</p><br>
+
+    <p>this is an <strong>easy</strong> attempt <br>
+    <h3 class="create">create</h3>
+    <br><h3 class="to">to</h3><h3 class="something">something,</h3><br>
+
+    <h5>your contribution for today:</h5>
+    <form action="{% url 'contribution' %}">
+      <textarea class="textarea" name="contribution" rows="12" cols="69"></textarea><br>
+        <button type="reset" class="btn btn-danger">Reset</button>
+        <button type="submit" class="btn btn-success">Enter</button>
+    </form>
+  </body>
+</html>

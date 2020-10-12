@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>contribution of the day</title>
+    <style>
+        body {
+            background-color: darkslategrey;
+            color: azure;
+            font-size: 1.1em;
+            margin: 15px auto 20px 12px;
+        }
+        
+        h1 {
+            color: coral;
+        }
+
+        #buttondanger {
+          float: left;
+          margin-right: 10px;
+        }
+
+        #buttonsuccess {
+          float: left;
+        }
+    </style>
+  </head>
+  <body>
+      <h3>Want to read through?</h3>
+      {{ contribution }}<br>
+    <h5>Is this it?</h5>
+    <form action="{% url 'home' %}">
+        <button type="submit" class="btn btn-danger" id="buttondanger">No</button>
+    </form>
+    <form action="{% url 'thankyou' %}">
+        <button type="submit" class="btn btn-success" id="buttonsuccess">Yes</button>
+    </form>
+  </body>
+</html>
